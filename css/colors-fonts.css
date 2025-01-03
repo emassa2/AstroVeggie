@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #FCCA07; /* Giallo principale */
+    --secondary-color: #16300B; /* Verde scuro */
+    --white-color: #F4EEE8; /* Bianco crema */
+    --light-green: #F4EEE8; /* Verde chiaro */
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: Tomorrow, sans-serif;
+}
