@@ -15,37 +15,77 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row no-gutters">
+        <div class="row">
             <!-- Menu laterale -->
             <aside class="col-3 menu d-flex flex-column align-items-center justify-content-between py-3">
-                <div class="logo">
-                    <img src="img/logo.png" alt="AstroVeggie Logo" class="img-fluid" width="1200px">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="AstroVeggie Logo" class="img-fluid" width="1200px">
+                        </div>
+                    </div>
                 </div>
-                <nav class="nav flex-column w-100">
-                    <a href="#" class="nav-link">Panini e Menù</a>
-                    <a href="#" class="nav-link">Contorni</a>
-                    <a href="#" class="nav-link">Bevande</a>
-                    <a href="#" class="nav-link">Dolci</a>
-                    <a href="#" class="nav-link">Offerte</a>
-                    <a href="#" class="nav-link active">AstroKids</a>
-                </nav>
-                <div class="utils">
-                    <img src="img/translate.png" alt="AstroVeggie Logo" class="img-fluid acc" width="600px">
-                    <img src="img/accessibility.png" alt="AstroVeggie Logo" class="img-fluid acc" width="600px">
+                <div class="row w-100">
+                    <div class="col-md-12">
+                        <nav class="nav flex-column">
+                            <a href="#" class="nav-link">Panini e Menù</a>
+                            <a href="#" class="nav-link">Contorni</a>
+                            <a href="#" class="nav-link">Bevande</a>
+                            <a href="#" class="nav-link">Dolci</a>
+                            <a href="#" class="nav-link">Offerte</a>
+                            <a href="#" class="nav-link active">AstroKids</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row justify-content-around align-items-center">
+                    <div class="col-md-5 text-center">
+                        <img src="img/translate.png" alt="AstroVeggie Logo" class="img-fluid acc" width="600px">
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <img src="img/accessibility.png" alt="AstroVeggie Logo" class="img-fluid acc" width="600px">
+                    </div>
                 </div>
             </aside>
 
-            <!-- Area principale -->
-            <main class="col-9 position-relative py-3">
+            <main class="col-9 d-flex flex-column justify-content-between py-3" style="height: 100vh;">
                 <!-- Header -->
-                <header class="d-flex justify-content-between align-items-center py-3">
-                    <img src="img/back.png" alt="AstroVeggie Logo" class="img-fluid acc" width="600px">
-                    <h1 class="text-uppercase text-shadow text-success fw-bold display-4">AstroKids</h1>
-                    <img src="img/cart.png" alt="AstroVeggie Logo" class="img-fluid acc" width="600px">
+                <header class="row align-content-center flex-grow-1" style="flex: 0 0 15%;">
+                    <div class="col-md-3 d-flex justify-content-center">
+                        <img src="img/back.png" alt="AstroVeggie Logo" class="img-fluid acc" width="600px">
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <h1 class="text-uppercase text-center text-shadow text-success fw-bold display-4">AstroKids</h1>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-center">
+                        <img src="img/cart.png" alt="AstroVeggie Logo" class="img-fluid acc" width="600px">
+                    </div>
                 </header>
+            
+                <!-- Sezione immagine e testo -->
+                <div class="row py-3 my-4 mx-3 flex-grow-1 step" style="flex: 0 0 65%;">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="img/character.png" alt="Sezione Immagine" class="img-fluid" width="100%">
+                    </div>
+                    <div class="message-box">
+                        <p>Ciao! Io sono <b>SuperAstro</b>, l’aiutante spaziale che ti accompagnerà nella tua missione:<br>
+                        <br><b style="text-transform: uppercase;">creare il tuo menù!</b></p> <br>
+                        <p>Clicca il tasto in basso a destra per iniziare la nostra avventura!</p>
+                    </div>
 
-               
+
+
+                </div>
+            
+                <!-- Pulsante allineato a destra -->
+                <div class="row flex-grow-1" style="flex: 0 0 15%; margin-right: 200px;">
+                    <div class="col-md-12 d-flex justify-content-end align-items-center">
+                        <a class="btn-go" href="/step1.html"><b>Iniziamo!</b></a>
+                    </div>
+                </div>
             </main>
+            
+            
+            
         </div>
     </div>
 

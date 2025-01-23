@@ -2,10 +2,19 @@
     --primary-color: #FCCA07; /* Giallo principale */
     --secondary-color: #16300B; /* Verde scuro */
     --white-color: #F4EEE8; /* Bianco crema */
-    --light-green: #F4EEE8; /* Verde chiaro */
+    --light-green: #799B63; /* Verde chiaro */
 }
 
 body {
     background-color: var(--primary-color);
     font-family: Tomorrow, sans-serif;
+}
+
+b{
+    font-weight: 600;
+}
+
+p{
+    font-weight: 500;
+    font-size: 10rem;
 }
