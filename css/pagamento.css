@@ -1,0 +1,292 @@
+:root {
+    --dark-purple: #281C3B; /* Viola scuro per contorni e testo */
+    --medium-purple: #6C4D9D; /* Viola medio per sfondo del menù */
+    --white-color: #F4EEE8; /* Bianco per testo e alcuni elementi */
+    --light-purple: #CAC2D6; /* Lilla per sfondo del body */
+    --yellow-color: #FCCA07; /* Giallo */
+    --light-green: #799B63; /* Verde chiaro */
+}
+
+body {
+        background-color: var(--light-purple);
+        font-family: Tomorrow, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.payment {
+    background-color: #6C4D9D;
+}
+.text-white {
+    color: var(--white-color);
+}
+
+.text-title {
+    width: auto; /* Rimuovi la larghezza fissa per evitare problemi di centraggio */
+    height: auto; /* Evita un'altezza fissa che può creare disallineamenti */
+    color: var(--white-color);
+    text-align: center;
+    -webkit-text-stroke-width: 13px;
+    -webkit-text-stroke-color: var(--dark-purple);
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: bold;
+    font-size: 349.04px;
+    letter-spacing: 40px;
+    margin-top: -58%;
+
+    display: flex;
+    justify-content: center;  /* Centra orizzontalmente */
+    align-items: center;      /* Centra verticalmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Sposta l'elemento esattamente al centro */
+}
+
+    
+.logo-container {
+    display: flex;
+    justify-content: flex-start; /* Allinea il logo a destra */
+}
+
+.logo {
+    width: 1431px; /* Il logo occuperà il 100% della larghezza delle 2 colonne */
+    height: auto; /* Mantieni la proporzione */
+    max-width: none; /* Permette al logo di espandersi completamente dentro le due colonne */
+}
+
+/* Assicurati che l'header prenda tutta la larghezza e che non influisca sugli altri elementi */
+header {
+    display: flex;
+    justify-content: space-between; /* Aggiunge spazio tra il titolo e il logo */
+    align-items: center; /* Allinea verticalmente */
+    width: 100%; /* Prende tutta la larghezza */
+}
+
+.back-button{
+    padding: 0;
+    margin-top: 40%;
+    width: 520px;
+    height: 520px;
+}
+/* Contenitore quadrato */
+.back-icon {
+    border: 27px solid var(--dark-purple);
+    width: 520px;
+    height: 520px;
+  
+}
+
+.row {
+    margin: 0 auto;
+}
+
+.card-custom {
+    width: 90%;
+    height: 2894px;
+    flex-shrink: 0;
+    border: 27px solid var(--dark-purple);
+    background: var(--white-color);
+    justify-content:center;
+    margin: 205px;
+}
+
+.inner-card {
+    width: 1370px; /* Larghezza della card interna */
+    height: 472px; /* Altezza della card interna */
+    background-color: var(--yellow-color); /* Sfondo bianco */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 27px solid var(--dark-purple);
+    top: -27px;
+    right: -27px;
+     z-index: 1;
+}
+   
+.text-inner-card {
+    color: var(--dark-purple);
+    font-family: Tomorrow, sans-serif;
+    font-size: 205px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 164px; /* 80% */
+    letter-spacing: -2px;
+}
+
+.card-image-totem {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+    top: 50%;       /* Centra verticalmente */
+    left: 50%;      /* Centra orizzontalmente */
+    transform: translate(-50%, -50%); /* Allinea il centro dell'immagine alla card */
+    object-fit: cover; /* Mantiene il rapporto d'aspetto */
+    box-sizing: border-box;
+}
+
+.card-image-checkout {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+    top: 50%;       /* Centra verticalmente */
+    left: 50%;      /* Centra orizzontalmente */
+    transform: translate(-50%, -50%); /* Allinea il centro dell'immagine alla card */
+    object-fit: cover; /* Mantiene il rapporto d'aspetto */
+    box-sizing: border-box;
+ }
+   
+    
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 2315px;
+}
+    
+.character {
+    width: 2200px;
+    height: 3200px;
+    margin-top: 600px;
+    margin-bottom: -300px;
+    margin-right: 250px;
+    transform: translateX(-700px);
+}
+    
+.comic-container {
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translate(-50%, -50%);
+    width: 2624px;
+    height: 1342px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.comic {
+    width: 100%;
+    height: auto;
+}
+    
+.comic-container p {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    color: var(--dark-purple);
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 123px;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 20px;
+    left: 15%;
+}
+    
+.price {
+    font-size: 170px; /* Aumenta la dimensione del testo */
+    color: var(--yellow-color); /* Cambia colore (usa un colore della tua palette) */
+    font-weight:bold; /* Rendi il testo più marcato */;
+    -webkit-text-stroke: 13px var(--dark-purple);
+}    
+    
+.buttonFooter {
+    width: 100%; /* Occupare tutta la larghezza del contenitore */
+    height: 494px;
+    background-color: var(--white-color);
+    text-align: center;
+    display: flex; /* Usato per disporre l'immagine e il testo uno accanto all'altro */
+    justify-content: center; 
+    align-items: center; 
+    border: 27px solid var(--dark-purple);
+    flex-direction: row;
+    }
+
+.imageButton {
+    width: 267px;
+    height: 267px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.textButton {
+    font-size: 165px;
+    color: var(--dark-purple);
+    text-align: center;
+    font-family: Tomorrow, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 164px; /* 109.091% */
+    letter-spacing: -1.5px;
+    }
+
+.row-buttons {
+    margin-top: 50px; 
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: absolute;
+    bottom: 150px; /* Riduci il valore di bottom per spostare i bottoni più in alto */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    }
+    
+footer {
+    position: absolute;
+    bottom: 500px; /* Sposta il footer più in basso rispetto al bordo della finestra */
+    left: 0;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    padding: 10px;
+    }
+    
+.footer_item {
+    height: 548px;
+    width: 685px;
+    border: 27px solid #281C3B;
+    background-color: #F4EEE8;
+    border-radius: 0px;
+    margin-left: 50px;  /* Aggiungi margine a sinistra */
+    margin-right: 50px; /* Aggiungi margine a destra */
+    margin-top: -10%;
+    }
+    
+     
+.footer-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Adatta l'immagine senza tagliarla */
+    object-position: center; /* Centra l'immagine nel box */
+    }
+    
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+    top: 50%;       
+    left: 50%;      
+    transform: translate(-50%, -50%); /* Allinea il centro dell'immagine alla card */
+    object-fit: cover; /* Mantiene il rapporto d'aspetto */
+    box-sizing: border-box;
+    }
+
+.character2 {
+    position: fixed;  /* Mantiene l'immagine fissa nella posizione desiderata */
+    bottom: 0;  /* La posiziona alla fine della pagina */
+    left: 0;  /* La posiziona a sinistra */
+    width: 25%;  /* Occupa circa 3 colonne di Bootstrap (3/12 ≈ 25%) */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    z-index: 10; /* Assicura che stia sopra gli altri elementi */
+    }

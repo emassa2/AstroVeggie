@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href='../src/pagamento.css' rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="payment text-white">
+<div class="container-fluid">
+    <header class="d-flex justify-content-between align-items-center py-3 col-12">
+        <!-- Bottone freccia indietro spostato leggermente più in basso -->
+        <div class="col-md-2 offset-md-1 d-flex justify-content-start" style="margin-top: 40px;"> <!-- margine superiore ridotto -->
+            <button class="back-button">
+                <img src="../img/arrowBack.png" alt="back button" class="back-icon">
+            </button>
+        </div>
+        <!-- Titolo che occupa 8 colonne -->
+        <h1 class="text-uppercase fw-bold display-4 text-title col-md-8 text-center mx-auto" style="margin-left: -10px;">PAGAMENTO</h1>
+        <!-- Logo che occupa 2 colonne a destra -->
+        <div class="logo-container col-md-2">
+        <img src="../img/Logo.png" alt="AstroVeggie Logo" class="logo">
+        </div>
+    </header>
+
+    <div class="row justify-content-center col-12 wrapper">
+        <div class="image-container">
+            <img src="../img/character.png" alt="character image" class="img-fluid character">
+            <div class="comic-container">
+                <img src="../img/fumetto.svg" alt="comic image" class="img-fluid comic">
+                <p>Missione quasi compiuta! <br> Il tuo ordine è di<br> 
+                    <span class="price">16,50€</span><br>
+                    Scegli dove pagare
+                 </p>                 
+            </div>
+        </div>
+    </div>    
+   
+    <!-- Due card una accanto all'altra -->
+    <div class="row justify-content-center g-5 col-12 col-md-8 position-relative">
+        <div class="col-md-6 d-flex justify-content-center">
+            <button onclick="" class="card card-custom position-relative">
+                <!-- Card interna in alto a destra -->
+                <span class="inner-card position-absolute">
+                    <span class="p-2 text-center">
+                        <span class="fw-bold text-inner-card">Al totem</span>
+                    </span>
+                </span>
+                <!-- Immagine principale -->
+                <img src="../img/totem.png" class="card-image-totem" alt="totem image">
+            </button>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+            <button onclick="" class="card card-custom position-relative">
+                <!-- Card interna in alto a destra -->
+                <span class="inner-card position-absolute">
+                    <span class="p-2 text-center">
+                        <span class="fw-bold text-inner-card">In cassa</span>
+                    </span>
+                </span>
+                <!-- Immagine principale -->
+                <img src="../img/chackout.png" class="card-image-checkout" alt="checkout image">
+            </button>
+        </div>
+    </div>
+   
+
+    <!-- Bottoni finali -->
+    <!-- Contenitore per i bottoni -->
+    <footer class="row justify-content-center">
+        <div class="footer_item col-auto">
+            <span class="footer-btn-chat">
+                <img class="footer-img" src="../img/chat2.png" alt="translate button">
+            </span>
+        </div>
+        <div class="footer_item col-auto">
+            <span class="footer-btn-info">
+                <img class="footer-img" src="../img/accessibility3.png" alt="accessibility button">
+            </span>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
