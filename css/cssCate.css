@@ -161,10 +161,10 @@
   .img-card { /*Immagini nella card*/
     position: absolute; /* Posizionamento assoluto all'interno della card */
     top: 50%;  /* Posiziona l'immagine a metà della card */
-    transform: translateY(-40%) translateX(-40%); /* Sposta l'immagine più in basso e meno a sinistra */
+    transform: translateY(-50%) translateX(-30%); /* Sposta l'immagine più in basso e meno a sinistra */
     max-width: 100%; /* Assicura che le immagini non escano dal contenitore */
-    height: auto; /* Mantieni il rapporto di aspetto */
-    width: 1150px; /* Imposta la larghezza per ogni immagine */
+    height: 1800px !important; /* Mantieni il rapporto di aspetto */
+    width: 1800px !important; /* Imposta la larghezza per ogni immagine */
   }
   
   .img-card-prezzo{
