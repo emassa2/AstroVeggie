@@ -113,7 +113,7 @@
 
 
 .display-4{
-    font-size: 16.5rem;
+    font-size: 329px;
     margin: 50px;
     padding: 50px 100px;
 }
@@ -133,10 +133,6 @@ padding-left: 0px;
 padding-right: 0px;
 }
 
-header{
-    padding-left: 300px !important;
-    padding-right: 300px !important;
-}
 
 .step{
     margin: 200px!important;
@@ -329,3 +325,42 @@ h2{
 #add-img1{
     display: flex;
 }
+.button-frame{
+    border: 27px solid var(--secondary-color);
+    background-color: var(--white-color);
+  }
+  
+  .button-frame-add1{
+    position: relative;
+    top: -880px;
+    width: 250px;
+    height: 250px;
+    display: none;
+    right: -450px;
+  }
+  
+  .price-box-container {
+    background-color: var(--secondary-color);
+    border: 27px solid var(--secondary-color);
+    border-top: none;
+    height: 185px;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .price-box {
+    color: var(--white-color);
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Tomorrow', sans-serif;
+    line-height:1.2;
+  }
+  
+  /* Styling per il contenuto del rettangolo giallo */
+  .price-box-container .price-box{
+    font-size: 7rem;
+  }
