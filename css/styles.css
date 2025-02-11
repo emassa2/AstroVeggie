@@ -287,13 +287,13 @@ h2{
     height: 42%; /* Altezza uguale alla larghezza */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
-    margin-left: auto; /* Centrare orizzontalmente */
+    margin-left: -5%; /* Centrare orizzontalmente */
     margin-right: auto; /* Centrare orizzontalmente */
     margin-bottom: auto;
     display: flex; /* Per centrare il testo verticalmente */
     justify-content: center;
     align-items: center;
-    top: 40%;
+    top: 30%;
 }
 
 .message-box-tondo::after {
