@@ -322,7 +322,14 @@ h2{
 .img-sale{
     width: 1020.88px;
     height: 650px;
+    margin-right: 0.5%;
     transform:translateY(10%);
+}
+
+.img-sale1{
+    width: 1020.88px;
+    height: 650px;
+    transform:translateY(-50%);
 }
 
 #add-img1{
