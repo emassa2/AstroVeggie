@@ -166,11 +166,21 @@
     height: 1800px !important; /* Mantieni il rapporto di aspetto */
     width: 1800px !important; /* Imposta la larghezza per ogni immagine */
   }
+
+  .img-card-food { /*Immagini nella card*/
+    position: absolute; /* Posizionamento assoluto all'interno della card */
+    top: 50%;  /* Posiziona l'immagine a metà della card */
+    transform: translateY(-35%) translateX(-30%); /* Sposta l'immagine più in basso e meno a sinistra */
+    max-width: 100%; /* Assicura che le immagini non escano dal contenitore */
+    height: auto; /* Mantieni il rapporto di aspetto */
+    width: 1300px; /* Imposta la larghezza per ogni immagine */
+  }
+  
   
   .img-card-prezzo{
     position: absolute; /* Posizionamento assoluto all'interno della card */
     top: 50%;  /* Posiziona l'immagine a metà della card */
-    transform: translateY(-30%) translateX(60%); /* Sposta l'immagine più in basso e meno a sinistra */
+    transform: translateY(-30%) translateX(70%); /* Sposta l'immagine più in basso e meno a sinistra */
     max-width: 100%; /* Assicura che le immagini non escano dal contenitore */
     height: auto; /* Mantieni il rapporto di aspetto */
     width: 877px; /* Imposta la larghezza per ogni immagine */
