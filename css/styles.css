@@ -316,10 +316,12 @@ h2{
     top: 54.5%;
     left: -1%;
     z-index: 999;
+    height: 480px;
 }
 
 .img-sale{
     width: 1020.88px;
+    height: 650px;
     transform:translateY(-50%);
 }
 
