@@ -1,0 +1,507 @@
+/*DEFINIZIONE CUSTOM PROPERTIES PER COLORI*/
+:root {
+    --dark-purple: #281C3B; /* Viola scuro per contorni e testo */
+    --medium-purple: #6C4D9D; /* Viola medio per sfondo del menù */
+    --white-color: #F4EEE8; /* Bianco per testo e alcuni elementi */
+    --light-purple: #CAC2D6; /* Lilla per sfondo del body */
+    --yellow-color: #FCCA07; /* Giallo */
+    --light-green: #A9C99C; /* Verde chiaro */
+  }
+  
+  /*PROPRIETA' BODY*/
+  body {
+    background-color: var(--light-purple);
+    font-family: Tomorrow, sans-serif;
+  }
+  
+  b {
+    font-weight: 600;
+  }
+  
+  p {
+    font-weight: 500;
+    font-size: 10rem;
+  }
+  
+  /*TITOLI*/
+  h1 {
+    color: var(--medium-purple) !important;
+    -webkit-text-stroke: 13px var(--dark-purple);
+    font-size: 329px !important;
+    font-weight: bold !important;
+    letter-spacing: 40px !important;
+  }
+  
+  h2{
+    font-size: 230px;
+    font-weight: bold;
+    align-content: center;
+  }
+  
+  h3{
+    font-size: 205px;
+    font-weight: bold;
+  }
+  
+  h3.promo-box{
+    color: var(--white-color) !important;
+    -webkit-text-stroke: 13px var(--dark-purple);
+  }
+  
+  h4{
+    font-size: 165px;
+    font-weight: bold;
+  }
+  
+  /*HEADER*/
+  .button-frame {
+    border: 27px solid var(--dark-purple) !important;
+    background-color: var(--white-color);
+  }
+  
+  .price-box-container {
+    background-color: var(--yellow-color);
+    border: 27px solid var(--dark-purple);
+    border-top: none;
+    height: 185px;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .price-box {
+    color: var(--dark-purple) !important;
+    text-align: center;
+    font-size: 109px;
+    font-weight: bold;
+    font-family: 'Tomorrow', sans-serif;
+    line-height: 1.2;
+  }
+  
+  /*MENU' LATERALE*/
+  .menu {
+    background-color: var(--medium-purple);
+    height: 100vh;
+    border-right: 25px solid var(--dark-purple);
+  }
+  
+  .menu .nav-link {
+    font-weight: bold;
+    font-size: 13.5rem;
+    color: var(--dark-purple);
+    background-color: var(--white-color);
+    text-align: center;
+    padding: 20.5rem 1rem;
+    margin: 2rem 0;
+    border-top: 25px solid var(--dark-purple);
+    border-bottom: 25px solid var(--dark-purple);
+    transform: skewY(-10deg);
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .menu .nav-link.active {
+    background-color: var(--dark-purple);
+    color: var(--white-color);
+  }
+  
+  .button-frame {
+    border: 25px solid var(--dark-purple) !important;
+    background-color: var(--white-color);
+  }
+  
+  /*CONTORNO BOTTONI QUADRATI*/
+  .button-frame-add1 {
+    position: relative;
+    top: -880px;
+    width: 250px;
+    height: 250px;
+    display: none;
+    right: -450px;
+  }
+  
+  /*ALLINEAMENTO E DIMENSIONE H1*/
+  .display-4 {
+    font-size: 329px;
+    margin: 50px;
+    padding: 50px 100px;
+  }
+  
+  /*GESTIONE SPAZIATURE*/
+  .py-3 {
+    padding-bottom: 500px !important;
+    padding-top: 300px !important;
+  
+  }
+  
+  .row > * {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  /*CARD*/
+  h2.card-title-centered { /*Titolo H2 sopra ad ogni card*/
+    text-align: center; /* Centra il testo */
+    margin-bottom: 40px; /* Aggiungi un po' di spazio tra il titolo e la card */
+    width: 100%;
+    position: relative;
+    z-index: 3; /* Puoi anche dare uno z-index per separarlo sopra la card */
+  }
+  
+  .menu-item {
+    display: flex;
+    justify-content: center; /* Centra le immagini orizzontalmente */
+    align-items: center; /* Allinea le immagini verticalmente */
+    gap: 20px; /* Spazio tra le due immagini */
+  }
+  
+  .img-card { /*Immagini nella card*/
+    position: absolute; /* Posizionamento assoluto all'interno della card */
+    top: 50%;  /* Posiziona l'immagine a metà della card */
+    transform: translateY(-40%) translateX(-40%); /* Sposta l'immagine più in basso e meno a sinistra */
+    max-width: 100%; /* Assicura che le immagini non escano dal contenitore */
+    height: auto; /* Mantieni il rapporto di aspetto */
+    width: 1150px; /* Imposta la larghezza per ogni immagine */
+  }
+  
+  .img-card-prezzo{
+    position: absolute; /* Posizionamento assoluto all'interno della card */
+    top: 50%;  /* Posiziona l'immagine a metà della card */
+    transform: translateY(-30%) translateX(60%); /* Sposta l'immagine più in basso e meno a sinistra */
+    max-width: 100%; /* Assicura che le immagini non escano dal contenitore */
+    height: auto; /* Mantieni il rapporto di aspetto */
+    width: 877px; /* Imposta la larghezza per ogni immagine */
+  }
+  
+  .card {
+    border: 27px solid var(--dark-purple);
+    background-color: var(--white-color);
+    height: 1999px;
+    display: flex;
+    flex-direction: column; /* Aggiunto per posizionare gli elementi in colonna */
+    justify-content: flex-end; /* Allinea gli elementi in alto */
+    align-items: center;
+    position: relative; /* Necessario per posizionare il riquadro verde */
+    flex: 0 0 auto;
+    width: 45%;
+  }
+  
+  .card-title-space{ /*Spazio per card in colonna Apollo12*/
+    margin-top: 20px;
+  }
+  
+  .margin-card{ /*Margini da dare quando si hanno due card inline*/
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .card-description {
+    background-color: var(--light-green);
+    color: var(--dark-purple);
+    text-align: left;
+    padding: 120px;
+    font-weight: 600;
+    line-height: 140px;
+    font-size: 123px;
+    position: absolute;
+    top: -27px;
+    right: -27px;
+    border: 27px solid var(--dark-purple);
+    z-index: 2;
+  }
+  
+  
+  .btn-go img {
+    width:500px; /* Regola la dimensione dell'immagine */
+    height: auto;
+  }
+  
+  .btn-margin{ /*Spazio per pagina offerta*/
+    margin-top: 0px;
+  }
+  
+  
+  /*ELEMENTI AGGIUNTIVI PAGINE CATE*/
+  /*PREZZO ORIGINALE*/
+  .price-tag{
+    position:relative;
+    border: 14px solid var(--dark-purple);
+    width: 748px;
+    height: 400px;
+    font-size: 123px; /*16px*/
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*EFFETTO OVERLAY*/
+  .price-tag::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(202, 194, 214, 0.6);
+  }
+  /*POSIZIONAMENTO SPIKE SOVRAPPOSTO A PREZZO*/
+  .price-tag img {
+    position: absolute;
+    bottom: -700px;  /* Sposta l'immagine leggermente fuori dal div */
+    left: -500px;  /* Sposta l'immagine verso il basso e a sinistra */
+    width: 1300px;  /* Imposta la larghezza dell'immagine */
+    z-index: 2;
+  }
+  
+  /*BLOCCO INTESTAZIONE SEZIONE*/
+  .section-header{
+    height:509px;
+    width: 5104px;
+    background-color: var(--medium-purple);
+    text-align: center;
+    align-content: center;
+    border: 27px solid var(--dark-purple);
+    color: var(--white-color);
+  }
+  
+  /*BLOCCO OFFERTE MENU*/
+  .section-promo-menu{
+    height: 2638px;
+    width: 5138px;
+    background-color: var(--white-color);
+    text-align: center;
+    align-content: center;
+    border: 27px solid var(--dark-purple);
+  }
+  
+  /*MODIFICHE CARD PER PROMO*/
+  .card-content {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+  }
+  .left-side {
+    justify-content: flex-end;
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .right-side {
+    width: 50%;
+    text-size: 151px;
+    text-weight: bold;
+    line-height: 160px;
+    padding-bottom: 400px;
+    color: var(--dark-purple);
+    padding-right: 600px;
+  }
+  .card.promo-code{
+    text-align: center;
+    text-size: 151px;
+    text-weight: bold;
+    line-height: 160px;
+    padding-bottom: 400px;
+    color: var(--dark-purple);
+  }
+  
+  /* OVERLAY DI ATTIVAZIONE PROMO */
+  .card.promo-code.overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card.promo-code.overlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(199, 199, 201, 0.9); /* Osserva l'oscuramento */
+    z-index: 1;
+  }
+  
+  /* SCRITTA "ATTIVATA" */
+  .activated-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 165px;
+    font-weight: bold;
+    color: var(--yellow-color);
+    -webkit-text-stroke: 13px var(--dark-purple);
+    z-index: 2;
+    letter-spacing: 10px;
+  }
+  
+  .remove-overlay {
+    font-size: 140px;
+    font-weight: normal;
+    color: var(--dark-purple);
+    text-decoration: underline;
+    cursor: pointer;
+    z-index: 3;
+    position: absolute;
+    top: 600px;
+    left: 10%;
+  }
+  
+  /*ELEMENTI DI SPAZIO PER CODICI PAGINA SCONTO*/
+  .spacer {
+    width: 60px;
+    height: 1619px;
+    display: inline-block;
+  }
+  .spacer2 {
+    width: 5138px;
+    height: 60px;
+  }
+  
+  /* RETTANGOLI VIOLA DEI TITOLI */
+  .category-bar {
+    background-color: var(--medium-purple);
+    color: var(--white-color);
+    text-align: center;
+    font-weight: bold;
+    font-size: 240px;
+    border: 27px solid var(--dark-purple);
+    padding: 96px 103px;
+    width: 5104px;
+    height: 509px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 200px;
+    margin-bottom: 109px;
+  }
+  
+  .category-offers {
+    background-color: var(--medium-purple);
+    color: var(--white-color);
+    text-align: center;
+    font-weight: bold;
+    font-size: 240px;
+    border: 27px solid var(--dark-purple);
+    padding: 96px 103px;
+    width: 5104px;
+    height: 509px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 298px;
+  }
+  
+  /*ELEMENTI FLASH CARD PROMO*/
+  .flash-card {
+    width: 5104px;
+    height: 2700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 160px;
+  }
+  img.flash-card {
+    display: block;
+    margin-bottom: 500px;
+  }
+  .flash-card-wrapper {
+    position: relative;
+    width: 5104px;
+    height: 2700px;
+  }
+  
+  .flash-card {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .flash-card-image {
+    position: absolute;
+    max-width: 100%;
+    z-index: 1;
+  }
+  
+  .flash-card-image.apollo {
+    top: 676px;
+    left: 425px;
+    width: 1568px;
+    height: 1461px;
+  }
+  
+  .flash-card-image.text {
+    top: 124px;
+    left: 560px;
+    width: 1685px;
+    height: 705px;
+  }
+  .flash-card-image.spike {
+    left: 116px;
+    bottom: 140px;
+    width: 960px;
+    height: auto;
+  }
+  
+  .flash-card-image.textV1 {
+    top: 124px;
+    right: 110px;
+    width: 1685px;
+    height: 705px;
+  }
+  
+  
+  .flash-card-image.voyager1 {
+    right: 308px;
+    bottom: 530px;
+    width: 1568px;
+    height: 1461px;
+  }
+  
+  .flash-card-image.spikeHome2 {
+    right: 1397px;
+    bottom: 140px;
+    width: 960px;
+    height: auto;
+  }
+  
+  /*BOTTONE AGGIUNGI*/
+  .button-add {
+    background-color: var(--medium-purple);
+    color: var(--white-color);
+    text-align: center;
+    font-weight: bold;
+    font-size: 151px;
+    border: 27px solid var(--dark-purple);
+    width: 1938px;
+    height: 523px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 1712px;
+    margin-left: 1712px;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px; /* Distanza tra le card e il bottone */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+  }
+  
+  .img-add {
+    width: 253px;
+    height: auto;
+  }  
