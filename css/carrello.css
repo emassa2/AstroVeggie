@@ -1,0 +1,447 @@
+/*DEFINIZIONE CUSTOM PROPERTIES PER COLORI*/
+:root {
+    --dark-purple: #281C3B; /* Viola scuro per contorni e testo */
+    --medium-purple: #6C4D9D; /* Viola medio per sfondo del menù */
+    --white-color: #F4EEE8; /* Bianco per testo e alcuni elementi */
+    --light-purple: #CAC2D6; /* Lilla per sfondo del body */
+    --yellow-color: #FCCA07; /* Giallo */
+    --light-green: #A9C99C; /* Verde chiaro */
+}
+  
+    /*PROPRIETA' BODY*/
+    body {
+      background-color: var(--light-purple);
+      font-family: Tomorrow, sans-serif;
+    }
+  
+    b {
+      font-weight: 600;
+    }
+  
+    p {
+      font-weight: 500;
+      font-size: 10rem;
+    }
+  
+    /*TITOLI*/
+    h1 {
+      color: var(--medium-purple) !important;
+      -webkit-text-stroke: 13px var(--dark-purple) !important;
+      font-size: 329px !important;
+      font-family: Tomorrow, sans-serif;
+      letter-spacing: 40px;
+    }
+    
+    h2 {
+      font-size: 230px;
+      font-weight: bold;
+      align-content: center;
+    }
+  
+    h3 {
+      font-size: 205px;
+      font-weight: bold;
+    }
+  
+    h4 {
+      font-size: 165px;
+      font-weight: bold;
+    }
+  
+    /*MENU' LATERALE*/
+    .menu {
+      background-color: var(--medium-purple);
+      height: 100vh;
+      border-right: 25px solid var(--dark-purple);
+    }
+  
+    .menu .nav-link {
+      font-weight: bold;
+      font-size: 13.5rem;
+      color: var(--dark-purple);
+      background-color: var(--white-color);
+      text-align: center;
+      padding: 20.5rem 1rem;
+      margin: 2rem 0;
+      border-top: 25px solid var(--dark-purple);
+      border-bottom: 25px solid var(--dark-purple);
+      transform: skewY(-10deg);
+      position: relative;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+  
+    .menu .nav-link.active {
+      background-color: var(--dark-purple);
+      color: var(--white-color);
+    }
+  
+    /* Bottoni e contenuti del carrello */
+    .button-frame {
+      border: 27px solid var(--dark-purple);
+      background-color: var(--white-color); /*SFONDO BIANCO AI BOTTONI*/
+    }
+  
+    .price-box {
+      color: var(--dark-purple); 
+      text-align: center;
+      font-size: 109px; 
+      font-weight: bold;
+      font-family: 'Tomorrow', sans-serif;
+      line-height: 1.2; 
+    }
+    
+    /* RETTANGOLO GIALLO */
+    .price-box-container {
+      background-color: var(--yellow-color);
+      border: 27px solid var(--dark-purple);
+      border-top: none;
+      height: 185px;
+      width: 600px;
+      margin: 0 auto; 
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      position: relative;
+    }
+    
+    /* Styling per il contenuto del rettangolo giallo */
+    .price-box-container .price-box {
+      font-size: 7rem;
+    }
+  
+    /*ALLINEAMENTO E DIMENSIONE H1*/
+    .display-4 {
+      font-size: 329px;
+      margin: 50px;
+      padding: 50px 100px;
+    }
+  
+    /*HEADER*/
+    header {
+      height: 13vh;
+    }
+    
+    
+    /*GESTIONE SPAZIATURE*/
+    .py-3 {
+      padding-bottom: 500px !important;
+      padding-top: 300px !important;
+    }
+  
+    .row > * {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  
+    /*CARD*/
+    h2.card-title { /*Titolo H2 sopra ad ogni card*/
+      text-align: center; /* Centra il testo */
+      margin-bottom: 40px; /* Aggiungi un po' di spazio tra il titolo e la card */
+      width: 100%;
+      position: relative;
+      z-index: 3; /* Puoi anche dare uno z-index per separarlo sopra la card */
+    }
+  
+    .menu-item {
+      display: flex;
+      justify-content: center; /* Centra le immagini orizzontalmente */
+      align-items: center; /* Allinea le immagini verticalmente */
+      gap: 20px; /* Spazio tra le due immagini */
+    }
+  
+    .img-card { /*Immagini nella card*/
+      max-width: 100%; /* Assicura che le immagini non escano dal contenitore */
+      height: auto; /* Mantieni il rapporto di aspetto */
+      width: 1500px; /* Imposta la larghezza per ogni immagine, così non escono dal contenitore */
+    }
+
+    .img-menu{
+      max-width: 100%; /* Assicura che le immagini non escano dal contenitore */
+      height: auto; /* Mantieni il rapporto di aspetto */
+      width: 1700px; /* Imposta la larghezza per ogni immagine, così non escono dal contenitore */
+    }
+  
+    .card {
+      border: 27px solid var(--dark-purple);
+      background-color: var(--white-color);
+      height: 1999px;
+      display: flex;
+      flex-direction: column; /* Aggiunto per posizionare gli elementi in colonna */
+      justify-content: flex-end; /* Allinea gli elementi in alto */
+      align-items: center;
+      position: relative; /* Necessario per posizionare il riquadro verde */
+      flex: 0 0 auto;
+      width: 45%;
+    }
+  
+    .card-title-space{ /*Spazio per card in colonna Apollo12*/
+      margin-top: 20px;
+    }
+  
+    .margin-card{ /*Margini da dare quando si hanno due card inline*/
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  
+    .card-description {
+      background-color: var(--light-green);
+      color: var(--dark-purple);
+      text-align: left;
+      padding: 120px;
+      font-weight: 600;
+      line-height: 140px;
+      font-size: 123px;
+      position: absolute;
+      top: -27px;
+      right: -27px;
+      border: 27px solid var(--dark-purple);
+      z-index: 2;
+    }
+  
+    #add-img1 {
+      display: flex;
+    }
+  
+    /*BOTTONE PER PROSEGUIRE*/
+    .btn-go{
+      border: 25px solid var(--dark-purple)!important;
+      background-color: var(--medium-purple);
+      padding: 60px 80px;
+      font-size: 151px;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--white-color);
+      text-align: center;
+    }
+  
+    .btn-margin{ /*Spazio per pagina offerta*/
+      margin-top: 30px;
+    }
+  
+    /*CLASSI AGGIUNTE DA MARTI*/
+    .comic-price{
+      width: 1400px;
+      height: auto;
+    }
+  
+    .price-text.fw-bold {
+      font-size: 230px; /* Modifica la dimensione come preferisci */
+      margin-top: 10%;
+    }
+  
+    .btn-white{
+      border: 25px solid var(--dark-purple)!important;
+      background-color: var(--white-color);
+      padding: 60px 80px;
+      font-size: 151px;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--dark-purple);
+      text-align: center;
+      line-height: 1.2;
+    }
+   
+    .small-card {
+      display: flex;
+      gap: 10px; /* Spazio tra le sezioni */
+      border: 27px solid var(--dark-purple);
+      margin-top: 35px;
+      justify-content: center; /* Centra la piccola card rispetto all'elemento principale */
+    }
+  
+    .square-box {
+      width: 80px; /* Imposta una larghezza ridotta per i bottoni */
+      height: 80px;
+      background-color: var(--white-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .square-box-piu {
+      width: 80px;
+      height: 80px;
+      background-color: var(--medium-purple);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .rectangle-box {
+      width: 100px; /* Ridotto per essere visibile e proporzionato */
+      height: 80px;
+      background-color: var(--white-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      outline: 27px solid var(--dark-purple);
+    }
+  
+    .img-addDel {
+      width: 50px;
+      height: 50px;
+    }
+  
+    /* CSS per allineare la piccola card accanto alla card principale */
+    .col-lg-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .small-card {
+      display: flex;
+      gap: 10px; /* Spazio tra le sezioni */
+      border: 27px solid var(--dark-purple);
+      margin-right: 400px;
+      margin-top: 35px;
+    }
+  
+    .square-box {
+      width: 308px;         
+      height: 308px;          
+      background-color: var(--white-color); 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;      
+      overflow: hidden; 
+      border-right: 27px var(--dark-purple);
+      outline: 27px solid var(--dark-purple)       
+    }
+  
+    .square-box-piu {
+      width: 308px;           /* Larghezza del contenitore */
+      height: 308px;          /* Altezza del contenitore */
+      background-color: var(--medium-purple); /* Colore di sfondo */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;      /* Posizione relativa per contenere l'immagine */
+      overflow: hidden;    
+      border-left: 27px var(--dark-purple); 
+      outline: 27px solid var(--dark-purple)
+    }
+  
+    .img-addDel {
+      position: absolute;      /* Posiziona l'immagine in modo assoluto */
+      top: 0;
+      left: 0;
+      width: 100%;             /* Fai sì che l'immagine occupi tutta la larghezza del contenitore */
+      height: 100%;            /* Fai sì che l'immagine occupi tutta l'altezza del contenitore */
+      object-fit: cover;       /* Copre completamente l'area del quadrato senza distorsioni */
+      object-position: center; /* Centra l'immagine all'interno del quadrato */
+    }
+  
+    .rectangle-box {
+      width: 712px;
+      height: 308px;
+      background-color: var(--white-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      outline: 27px solid var(--dark-purple);
+    }
+  
+    #price-overlay {
+      font-size: 329px !important; /* Usa !important per assicurarti che venga rispettato */
+      font-family: 'Tomorrow', sans-serif;
+      font-weight: bold;
+    }
+  
+ /* Stili per il POPUP */
+/* Modal dialog */
+.modal-dialog {
+    margin-right: -2%;
+    width: 100%; /* Imposta la larghezza al 80% della pagina */
+    max-width: 5000px; /* Limita la larghezza massima */
+}
+
+/* Modal content */
+.modal-content {
+    width: 4302px; /* Mantieni la larghezza grande */
+    height: 2672px; /* Altezza dinamica */
+    max-height: 80vh; /* Limita l'altezza al 80% della pagina */
+    border: 27px solid #281C3B;
+    background-color: #A9C99C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    gap: 40px;
+    box-sizing: border-box; /* Include padding e bordi nelle dimensioni */
+}
+
+/* Modal header */
+.modal-header h1 {
+    -webkit-text-stroke: 14px var(--dark-purple); /* Usa il bianco per il contorno */
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 329px;
+    font-weight: bold;
+    color: var(--white-color); /* Colore del testo bianco */
+    letter-spacing: 22px;
+    text-align: center;
+    margin-top: 300px;
+}
+
+#cancelOrderModal .white-text {
+    color: var(--white-color) !important;
+    -webkit-text-stroke: 14px var(--dark-purple);
+}
+
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+    transform: translateY(-10%);
+}
+
+.modal-body p {
+    color: #281C3B;
+    font-size: 165px;
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px; /* Spazio tra il paragrafo e il bottone */
+}
+
+.modal-footer button {
+    display: flex;
+    width: 1164px;
+    height: 500px;
+    padding: 80px 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    flex-shrink: 0;
+    border: 27px solid #281C3B;
+    background-color: #6C4D9D;
+    font-family: 'Tomorrow', sans-serif;
+    color: #F4EEE8; 
+    font-weight: bold;
+    font-size: 150px;
+    text-align: center;
+    line-height: 1.2;
+    transform: translateY(-10%); /* Aggiunto per spostare il bottone */
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    gap: 200px; /* Distanza tra i due bottoni */
+}
+
+.spike{
+    position: absolute;
+    top: -450px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    height: auto; 
+}
