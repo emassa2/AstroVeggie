@@ -319,7 +319,8 @@ h2{
 }
 
 .img-sale{
-    width: 1000px;
+    width: 1020.88px;
+    transform:translateY(-50%);
 }
 
 #add-img1{
@@ -363,4 +364,11 @@ h2{
   /* Styling per il contenuto del rettangolo giallo */
   .price-box-container .price-box{
     font-size: 7rem;
+  }
+  h1 {
+    color:#518C3A !important;
+    -webkit-text-stroke: 13px var(--secondary-color);
+    font-size: 329px !important;
+    white-space: nowrap;
+    letter-spacing: 40px;
   }
