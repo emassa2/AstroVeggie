@@ -1,14 +1,4 @@
-/*DEFINIZIONE CUSTOM PROPERTIES PER COLORI*/
-:root {
-    --dark-purple: #281C3B; /* Viola scuro per contorni e testo */
-    --medium-purple: #6C4D9D; /* Viola medio per sfondo del menù */
-    --white-color: #F4EEE8; /* Bianco per testo e alcuni elementi */
-    --light-purple: #CAC2D6; /* Lilla per sfondo del body */
-    --yellow-color: #FCCA07; /* Giallo */
-    --light-green: #A9C99C; /* Verde chiaro */
-  }
-  
-  /*PROPRIETA' BODY*/
+ /*PROPRIETA' BODY*/
   body {
     background-color: var(--light-purple);
     font-family: Tomorrow, sans-serif;
@@ -302,8 +292,8 @@
   }
   .right-side {
     width: 50%;
-    text-size: 151px;
-    text-weight: bold;
+    font-size: 151px;
+    font-weight: bold;
     line-height: 160px;
     padding-bottom: 400px;
     color: var(--dark-purple);
@@ -311,8 +301,8 @@
   }
   .card.promo-code{
     text-align: center;
-    text-size: 151px;
-    text-weight: bold;
+    font-size: 151px;
+    font-weight: bold;
     line-height: 160px;
     padding-bottom: 400px;
     color: var(--dark-purple);
