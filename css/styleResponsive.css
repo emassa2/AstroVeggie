@@ -1,12 +1,4 @@
-/* Variabili */
-:root {
-    --dark-purple: #281C3B; /* Viola scuro per contorni e testo */
-    --medium-purple: #6C4D9D; /* Viola medio per sfondo del menù */
-    --white-color: #F4EEE8; /* Bianco per testo e alcuni elementi */
-    --light-purple: #CAC2D6; /* Lilla per sfondo del body */
-    --yellow-color: #FCCA07; /* Giallo */
-    --light-green: #799B63;
-  }/* Verde chiaro */
+
   
   /* Stili comuni */
   @media only screen and (min-width: 7016px){

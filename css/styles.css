@@ -1,5 +1,12 @@
 
+b{
+    font-weight: 600;
+}
 
+p{
+    font-weight: 500;
+    font-size: 10rem;
+}
 .menu {
     background-color: var(--primary-color);
     height: 100vh;
@@ -244,7 +251,7 @@ h2{
 }
 
 .top-bar {
-    background-color: var(--light-green);
+    background-color: var(--medium-green);
     color: var(--white-color);
     text-align: center;
     padding: 70px 10px;
@@ -259,7 +266,7 @@ h2{
 }
 
 .top-bar-step1 {
-    background-color: var(--light-green);
+    background-color: var(--medium-green);
     color: var(--white-color);
     text-align: center;
     padding: 50px 10px;
