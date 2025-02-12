@@ -1,4 +1,4 @@
-
+  
     body {
       background-color: var(--light-purple);
       font-family: Tomorrow, sans-serif;
@@ -174,7 +174,7 @@
     }
   
     /* GESTIONE IMMAGINI DELLE CATEGORIE */
-    .img-panino {
+    .img-burger {
       max-width: 100%; /* Assicura che le immagini non escano dal contenitore */
       height: 1359px; /* Mantieni il rapporto di aspetto */
       width: 1384px; /* Imposta la larghezza per ogni immagine, così non escono dal contenitore */
