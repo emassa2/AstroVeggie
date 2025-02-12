@@ -228,7 +228,7 @@
       height: 34.25rem;
       width: 42.8125rem;
       border: 1.687rem solid var(--dark-purple);
-      background-color: var(--white-color);
+      background-color: var(--white-color)!important;
       border-radius: 0;
       margin-left: 3.125rem;  /* Aggiungi margine a sinistra */
       margin-right: 3.125rem; /* Aggiungi margine a destra */
