@@ -249,3 +249,31 @@
     margin-top: 30px;
   }
   
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(40, 28, 59, 0.8);
+    z-index: 1;
+    display: flex; /* Flexbox per centrare il testo */
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  .overlay-text-sold-out {
+    color: var(--white-color);
+    font-size: 240px; /* Dimensione del testo */
+    font-weight: bold; /* Stile del testo */
+    text-align: center; /* Centra il testo */
+    -webkit-text-stroke: 13px var(--dark-purple);
+  }
+  
+  .overlay-text-coming-soon {
+    color: var(--yellow-color);
+    font-size: 240px; /* Dimensione del testo */
+    font-weight: bold; /* Stile del testo */
+    text-align: center; /* Centra il testo */
+    -webkit-text-stroke: 13px var(--dark-purple);
+  }
