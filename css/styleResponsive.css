@@ -184,6 +184,7 @@
       align-items: center; /* Centra verticalmente il contenuto */
       border: 1.687rem solid var(--dark-purple);
       flex-direction: row;
+      background-color: var(--white-color);
     }
     .imageButton {
       width: 16.6875rem;
