@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AstroVeggie - Bevande
-  </title>
+  <title>AstroVeggie-Dolci</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/product.css" rel="stylesheet">
@@ -12,9 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+3D&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <script src="js/script.js"> </script>
 </head>
-
 <body>
 <div class="container-fluid">
   <div class="row">
@@ -30,12 +27,12 @@
       <div class="row w-100">
         <div class="col-md-12">
           <nav class="nav flex-column">
-            <a href="#" class="nav-link">Panini e Menù</a>
-            <a href="#" class="nav-link">Contorni</a>
-            <a href="#" class="nav-link active">Bevande</a>
-            <a href="#" class="nav-link">Dolci</a>
-            <a href="#" class="nav-link">Offerte</a>
-            <a href="#" class="nav-link">AstroKids</a>
+            <a href="3_categoria-panini-e-menu.html" class="nav-link">Panini e Menù</a>
+            <a href="6_categoria-contorni.html" class="nav-link">Contorni</a>
+            <a href="8_categoria-bevande.html" class="nav-link">Bevande</a>
+            <a href="10_categoria-dolci.html" class="nav-link active">Dolci</a>
+            <a href="12_pagina-offerte.html" class="nav-link">Offerte</a>
+            <a href="17_astrokids-home.html" class="nav-link">AstroKids</a>
           </nav>
         </div>
       </div>
@@ -49,15 +46,13 @@
       </div>
     </aside>
 
-    <main class="col-9 d-flex flex-column justify-content-between py-3" style="height: 100vh; min-height: 80vh">
-      <!-- Header -->
-      <!-- Header -->
+    <main class="col-9 d-flex flex-column justify-content-between py-3" style="height: 100vh;">
       <header class="row align-content-center flex-grow-1 text-center" style="flex: 0 0 10%;">
         <div class="col-md-3 d-flex justify-content-center">
           <a href="index.html"><img src="img/arrowBack.png" alt="back button" class="img-fluid button-frame" width="600"></a>
         </div>
         <div class="col-md-6 d-flex justify-content-center">
-          <h1 class="text-uppercase text-center text-shadow fw-bold display-4">Bevande</h1>
+          <h1 class="text-uppercase text-center text-shadow fw-bold display-4">Dolci</h1>
 
         </div>
         <div class="col-md-3">
@@ -65,7 +60,7 @@
 
           <!-- Mini rettangolo giallo con il prezzo -->
           <div class="price-box-container">
-            <div class="price-box" id="total-price">0,00€</div>
+            <div class="price-box" id="total-price">16,50€</div>
           </div>
         </div>
       </header>
@@ -73,26 +68,28 @@
       <!-- Sezione immagine e testo -->
 
       <div class="row my-4 mx-3 flex-grow-1 step1-gen">
+        <!-- Intestazione: colonna che occupa tutta la larghezza -->
+
         <!-- due colonne adiacenti -->
         <div class="col-4 text-center card">
-          <h2 class="card-title">AstroCola</h2>
+          <h2 class="card-title">AstroSalad</h2>
           <div class="menu-item">
             <div class="card-description">
-              <span>Cola con un pizzico <br> di magia stellare</span>
+              <span>Dolce vegano al <br> gusto di the lunare</span>
             </div>
-            <img src="img/Astrocola.png" alt="Coca cola" class="img-card">
-            <img src="img/spike2.png" alt="price" class="img-card-price">
-            <img src="img/BestSeller.png" alt="bestseller" class="img-card-bestseller">
+            <img src="img/AstroBall.png" alt="spatial cookie" class="img-card">
+            <img src="img/spike1.png" alt="price" class="img-card-price">
+            <img src="img/BestSeller.png" alt="Bestseller" class="img-card-bestseller">
           </div>
         </div>
         <div class=" col-4 text-center card">
-          <h2 class="card-title">Orbit Orange</h2>
+          <h2 class="card-title">Sirius</h2>
           <div class="menu-item">
             <div class="card-description">
-              <span>Un mix esplosivo di <br> agrumi spaziali</span>
+              <span>Tiramisù 100%<br> vegano-stellare</span>
             </div>
-            <img src="img/OrbitOrange.png" alt="Orange juice" class="img-card">
-            <img src="img/spike2.png" alt="price" class="img-card-price">
+            <img src="img/Sirius.png" alt="vegan tiramisù" class="img-card">
+            <img src="img/spike1.png" alt="price" class="img-card-price">
             <p class="fw-bold mt-2"></p>
           </div>
         </div>
@@ -102,58 +99,56 @@
 
         <!-- due colonne adiacenti -->
         <div class="col-4 text-center card">
-          <h2 class="card-title">Lunade</h2>
+          <h2 class="card-title">Polaris</h2>
           <div class="menu-item">
             <div class="card-description">
-              <span>Succo di limone lunare e <br> polvere di stelle frizzante</span>
+              <span>Mousse con frutta <br>e spirulina</span>
             </div>
-            <img src="img/Lunade.png" alt="Lemonade" class="img-card">
-            <img src="img/spike2.png" alt="price" class="img-card-price">
+            <img src="img/Polaris.png" alt="fruit mousse" class="img-card">
+            <img src="img/spike1.png" alt="price" class="img-card-price">
           </div>
         </div>
         <div class=" col-4 text-center card">
-          <h2 class="card-title">Solar Tea</h2>
+          <h2 class="card-title">Lyra</h2>
           <div class="menu-item">
             <div class="card-description">
-              <span>Infuso con tea solare <br>puro e polvere di limone</span>
+              <span>Ciambella alla<br>stella-mora</span>
             </div>
-            <img src="img/SolarTea.png" alt="lemon tea" class="img-card">
-            <img src="img/spike2.png" alt="price" class="img-card-price">
+            <img src="img/Lyra.png" alt="red-fruits donut" class="img-card">
+            <img src="img/spike1.png" alt="price" class="img-card-price">
             <p class="fw-bold mt-2"></p>
           </div>
         </div>
       </div>
       <div class="row my-4 mx-3 flex-grow-1 step1-gen">
         <!-- Intestazione: colonna che occupa tutta la larghezza -->
-
         <!-- due colonne adiacenti -->
         <div class="col-4 text-center card">
-          <h2 class="card-title">Acqua Naturale</h2>
+          <h2 class="card-title">Rigel</h2>
           <div class="menu-item">
             <div class="card-description">
-              <span>Acqua cristallina <br> per un gusto puro</span>
+              <span>Rocce di Marte <br> al cioccolato</span>
             </div>
-            <img src="img/Water.png" alt="natural water" class="img-card">
-            <img src="img/spike3.png" alt="price" class="img-card-price">
+            <img src="img/Pinwheel.png" alt="rocket choco bites" class="img-card">
+            <img src="img/spike1.png" alt="price" class="img-card-price">
           </div>
         </div>
         <div class=" col-4 text-center card">
-          <h2 class="card-title">Acqua Frizzante</h2>
+          <h2 class="card-title">Vega</h2>
           <div class="menu-item">
             <div class="card-description">
-              <span>Una frizzante ondata <br> di freschezza </span>
+              <span>Girella panna e<br> astrocioc</span>
             </div>
-            <img src="img/Water.png" alt="sparkling water" class="img-card">
-            <img src="img/spike3.png" alt="price" class="img-card-price">
+            <img src="img/Vega.png" alt="chocolate and cream cake" class="img-card">
+            <img src="img/spike1.png" alt="price" class="img-card-price">
             <p class="fw-bold mt-2"></p>
           </div>
         </div>
       </div>
-  </main>
+    </main>
+  </div>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </div>
-</div>
-
-<!-- Bootstrap JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
