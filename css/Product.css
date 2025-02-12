@@ -1,0 +1,258 @@
+:root {
+    --dark-purple: #281C3B; /* Viola scuro per contorni e testo */
+    --medium-purple: #6C4D9D; /* Viola medio per sfondo del menù */
+    --white-color: #F4EEE8; /* Bianco per testo e alcuni elementi */
+    --light-purple: #CAC2D6; /* Lilla per sfondo del body */
+    --yellow-color: #FCCA07; /* Giallo */
+    --light-green: #A9C99C; /* Verde chiaro */
+  }
+  
+  body {
+    background-color: var(--light-purple);
+    font-family: Tomorrow, sans-serif;
+  }
+  
+  h1 {
+    color: var(--medium-purple) !important;
+    -webkit-text-stroke: 13px var(--dark-purple);
+    font-size: 329px !important;
+    white-space: nowrap;
+    letter-spacing: 40px;
+  }
+  
+  h2{
+    font-size: 230px;
+    font-weight: bold;
+    align-content: center;
+  }
+  
+  h3{
+    font-size: 205px;
+    font-weight: bold;
+  }
+  
+  h4{
+    font-size: 165px;
+    font-weight: bold;
+  }
+  
+  b{
+    font-weight: 600;
+  }
+  
+  p{
+    font-weight: 500;
+    font-size: 10rem;
+  }
+  
+  .menu {
+    background-color: var(--medium-purple);
+    height: 100vh;
+    border-right: 25px solid var(--dark-purple);
+  }
+  
+  .menu .nav-link {
+    font-weight: bold;
+    font-size: 13.5rem;
+    color: var(--dark-purple);
+    background-color: var(--white-color);
+    text-align: center;
+    padding: 20.5rem 1rem;
+    margin: 2rem 0;
+    border-top: 25px solid var(--dark-purple);
+    border-bottom: 25px solid var(--dark-purple);
+    transform: skewY(-10deg);
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .menu .nav-link.active {
+    background-color: var(--dark-purple);
+    color: var(--white-color);
+  }
+  
+  .button-frame{
+    border: 27px solid var(--dark-purple);
+    background-color: var(--white-color);
+  }
+  
+  .button-frame-add1{
+    position: relative;
+    top: -880px;
+    width: 250px;
+    height: 250px;
+    display: none;
+    right: -450px;
+  }
+  
+  .price-box-container {
+    background-color: var(--yellow-color);
+    border: 27px solid var(--dark-purple);
+    border-top: none;
+    height: 185px;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .price-box {
+    color: var(--dark-purple);
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Tomorrow', sans-serif;
+    line-height:1.2;
+  }
+  
+  /* Styling per il contenuto del rettangolo giallo */
+  .price-box-container .price-box{
+    font-size: 7rem;
+  }
+  
+  /*allineamento e dimensione h1*/
+  .display-4{
+    font-size: 329px !important;
+    margin: 50px;
+    padding: 50px 100px;
+  }
+  
+  header{
+    height: 13vh;
+  }
+  
+  /*gestione speziature*/
+  .py-3{
+    padding-bottom: 500px !important;
+    padding-top: 300px !important;
+  }
+  
+  .row>* {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  
+  h2.card-title { /*Titolo H2 sopra ad ogni card*/
+    position: absolute;
+    top: -350px; /* Posizione sopra la card */
+    left: 50%;
+    transform: translateX(-50%); /* Centra orizzontalmente il titolo */
+    text-align: center;
+    font-size: 230px; /* Imposta la dimensione del font */
+    margin-bottom: 20px; /* Spazio tra il titolo e la card */
+    white-space: nowrap; /* Impedisce che il testo vada a capo */
+    max-width: 100%; /* Limita la larghezza alla larghezza della card */
+  }
+  
+  .menu-item {
+    display: flex;
+    justify-content: center; /* Centra le immagini orizzontalmente */
+    align-items: center; /* Allinea le immagini verticalmente */
+    gap: 20px; /* Spazio tra le due immagini */
+  }
+  
+  .img-card { /*Immagini nella card*/
+    position: absolute; /* Posizionamento assoluto all'interno della card */
+    top: 50%;  /* Posiziona l'immagine a metà della card */
+    transform: translateY(-40%) translateX(-40%); /* Sposta l'immagine più in basso e meno a sinistra */
+    max-width: 100%; /* Assicura che le immagini non escano dal contenitore */
+    height: auto; /* Mantieni il rapporto di aspetto */
+    width: 1150px; /* Imposta la larghezza per ogni immagine */
+  }
+  .img-card-price{
+    position: absolute; /* Posizionamento assoluto all'interno della card */
+    top: 50%;  /* Posiziona l'immagine a metà della card */
+    transform: translateY(-30%) translateX(60%); /* Sposta l'immagine più in basso e meno a sinistra */
+    max-width: 100%; /* Assicura che le immagini non escano dal contenitore */
+    height: auto; /* Mantieni il rapporto di aspetto */
+    width: 877px; /* Imposta la larghezza per ogni immagine */
+  }
+  .img-bun-price{
+    position: absolute; /* Posizionamento assoluto all'interno della card */
+    top:65%;
+    transform:translateX(-70%);
+    max-width: 100%; /* Assicura che le immagini non escano dal contenitore */
+    height: auto; /* Mantieni il rapporto di aspetto */
+    width: 877px; /* Imposta la larghezza per ogni immagine */
+  }
+  .img-add{
+    position: absolute; /* Posizionamento assoluto all'interno della card */
+    top: 50%;  /* Posiziona l'immagine a metà della card */
+    transform: translateY(-30%) translateX(60%); /* Sposta l'immagine più in basso e meno a sinistra */
+    max-width: 100%; /* Assicura che le immagini non escano dal contenitore */
+    height: auto; /* Mantieni il rapporto di aspetto */
+    width: 842px;/* Imposta la larghezza per ogni immagine */
+  }
+  .img-card-bestseller{
+    position: absolute; /* Posizionamento assoluto all'interno della card */
+    top: 0;  /* Posiziona l'immagine nell'angolo superiore sinistro */
+    left: 0; /* Posiziona l'immagine nell'angolo sinistro */
+    width: 774px; /* Imposta la larghezza dell'immagine (puoi modificarla) */
+    height: auto; /* Mantieni il rapporto di aspetto */
+  }
+  .card {
+    border: 27px solid var(--dark-purple);
+    background-color: var(--white-color);
+    height: 1999px;
+    display: flex;
+    flex-direction: column; /* Aggiunto per posizionare gli elementi in colonna */
+    justify-content: flex-end; /* Allinea gli elementi in alto */
+    align-items: center;
+    position: relative; /* Necessario per posizionare il riquadro verde */
+    flex: 0 0 auto;
+    width: 45%;
+    margin-left: 170px;
+  }
+  .card-r-margin{
+    margin-right: 100px;
+  }
+  .card-l-margin{
+    margin-left: 100px;
+  }
+  
+  .card-title-space{ /*Spazio per card in colonna Apollo12*/
+    margin-top: 20px;
+  }
+  
+  .margin-card{ /*Margini da dare quando si hanno due card inline*/
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .card-description {
+    background-color: var(--light-green) !important;
+    color: var(--dark-purple);
+    text-align: left;
+    padding: 120px;
+    font-weight: 600;
+    line-height: 140px;
+    font-size: 123px;
+    position: absolute;
+    top: -27px;
+    right: -27px;
+    border: 27px solid var(--dark-purple);
+    z-index: 2;
+  }
+  
+  #add-img1 {
+    display: flex;
+  }
+  
+  /*BOTTONE PER PROSEGUIRE*/
+  .btn-go{
+    border: 25px solid var(--dark-purple)!important;
+    background-color: var(--medium-purple);
+    padding: 60px 80px;
+    font-size: 151px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--white-color);
+    text-align: center;
+  }
+  
+  .btn-margin{ /*Spazio per pagina offerta*/
+    margin-top: 30px;
+  }
+  
