@@ -68,8 +68,10 @@
         padding: 50px 100px;
     }
 
-    header {
-        height: 13vh;
+
+    .header-margin {
+        margin-bottom: 400px;
+        margin-top: 90px;
     }
 
     .py-3 {
@@ -127,7 +129,6 @@
         align-content: center;
     }
 
-    /* da qui mio */
 
     .bestseller {
         position: absolute;
@@ -324,6 +325,7 @@
         color: var(--white-color);
         text-align: center;
         margin-bottom: 40px;
+        margin-top: 100px;
     }
 
     .btn-go2 {
