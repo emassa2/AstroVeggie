@@ -51,7 +51,7 @@
 
             <main class="col-9 d-flex flex-column justify-content-between py-3" style="height: 100vh;">
                 <!-- Header -->
-                <header class="row align-content-center flex-grow-1 text-center" style="flex: 0 0 10%;">
+                <header class="row align-content-center flex-grow-1 text-center" id="header" style="flex: 0 0 10%;">
                     <div class="col-md-3 d-flex justify-content-center">
                       <a href="17_astrokids-home.html"><img src="img/back.png" alt="back button" class="img-fluid button-frame" width="600"></a>
                     </div>
@@ -63,9 +63,12 @@
                       <img id="cart-img" src="img/cartGreen.png" alt="cart button" class="img-fluid button-frame" width="600">
             
                       <!-- Mini rettangolo giallo con il prezzo -->
-                      <div class="price-box-container">
-                        <div class="price-box" id="total-price">0,00€</div>
+                      <div id="price-box-step1" class="price-box-container">
+                        <div class="price-box" id="price-box-text">0,00€</div>
                       </div>
+                      <img id="add-img" src="img/add1.png" alt="AstroVeggie Logo" class="img-fluid acc_add1" width="600px">
+                      <img id="add-img" src="img/add2.png" alt="AstroVeggie Logo" class="img-fluid acc_add1" width="600px">
+
                     </div>
                   </header>
             
@@ -91,7 +94,7 @@
                             <div class="top-bar-sale">
                                 <img src="img/cinque.png" alt="cinque" class="img-sale1">
                             </div>
-                            <h>Panini e contorni</h2>
+                            <h2>Panini e contorni</h2>
                         </div>
                         
                         <!-- Tre colonne adiacenti -->
