@@ -14,8 +14,8 @@
     <header class="d-flex justify-content-between align-items-center py-3 col-12">
         <!-- Bottone freccia indietro spostato leggermente più in basso -->
         <div class="col-md-2 offset-md-1 d-flex justify-content-start" style="margin-top: 40px;"> <!-- margine superiore ridotto -->
-            <button class="back-button">
-                <a href="14_carrello.html"><img src="img/arrowBack.png" alt="back button" class="back-icon"></a>
+            <button id="backButton" class="back-button">
+                <img src="img/arrowBack.png" alt="back button" class="back-icon">
             </button>
         </div>
         <!-- Titolo che occupa 8 colonne -->
@@ -42,7 +42,7 @@
     <!-- Due card una accanto all'altra -->
     <div class="row justify-content-center g-5 col-12 col-md-8 position-relative">
         <div class="col-md-6 d-flex justify-content-center">
-            <button onclick="" class="card card-custom position-relative">
+            <button id="buttonTotem" class="card card-custom position-relative">
                 <!-- Card interna in alto a destra -->
                 <span class="inner-card position-absolute">
                     <span class="p-2 text-center">
@@ -54,7 +54,7 @@
             </button>
         </div>
         <div class="col-md-6 d-flex justify-content-center">
-            <button onclick="" class="card card-custom position-relative">
+            <button id="buttonCash" class="card card-custom position-relative">
                 <!-- Card interna in alto a destra -->
                 <span class="inner-card position-absolute">
                     <span class="p-2 text-center">
@@ -83,5 +83,17 @@
         </div>
     </footer>
 </div>
+<script>
+    document.getElementById("backButton").addEventListener("click", function() {
+        window.location.href = "14_carrello.html";
+    });
+    document.getElementById("buttonTotem").addEventListener("click", function() {
+        window.location.href = "16_metodo-pagamento.html";
+    });
+    document.getElementById("buttonCash").addEventListener("click", function() {
+        window.location.href = "21_pagina-responsive.html";
+    });
+
+</script>
 </body>
 </html>

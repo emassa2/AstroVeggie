@@ -111,8 +111,8 @@
     padding: 50px 100px;
   }
   
-  header{
-    height: 13vh;
+  .header-margin{
+    margin-bottom: 400px;
   }
   
   /*gestione speziature*/

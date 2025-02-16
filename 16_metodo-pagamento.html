@@ -15,8 +15,8 @@
         <header class="d-flex justify-content-between align-items-center py-3 col-12">
             <!-- Bottone freccia indietro -->
             <div class="col-md-2 offset-md-1 d-flex justify-content-start" style="margin-top: 40px;">
-                <button class="back-button">
-                    <a href="15_pagamento.html"> <img src="img/arrowBack.png" alt="back button" class="back-icon"> </a>
+                <button id="backButton" class="back-button">
+                    <img src="img/arrowBack.png" alt="back button" class="back-icon">
                 </button>
             </div>
             <!-- Titolo -->
@@ -32,12 +32,12 @@
             <!-- Nuova riga con altre due card -->
             <div class="row justify-content-center g-5 col-12 col-md-8 position-relative">
                 <div class="col-md-6 d-flex justify-content-center">
-                    <button onclick="" class="card card-custom position-relative">
+                    <button id="visaChoice" class="card card-custom position-relative">
                         <img src="img/visa.png" class="card-image" alt="card-image-visa">
                     </button>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <button onclick="" class="card card-custom position-relative">
+                    <button id="ticketChoice" class="card card-custom position-relative">
                         <img src="img/ticket.png" class="card-image" alt="card-image-ticket">
                     </button>
                 </div>
@@ -46,12 +46,12 @@
             <!-- Aggiunta della nuova riga con altre due card -->
             <div class="row justify-content-center g-5 col-12 col-md-8 position-relative">
                 <div class="col-md-6 d-flex justify-content-center">
-                    <button onclick="" class="card card-custom position-relative">
+                    <button id="satispayChoice" class="card card-custom position-relative">
                         <img src="img/satispay.png" class="card-image" alt="card-image-satispay">
                     </button>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <button onclick="" class="card card-custom position-relative">
+                    <button id="appleChoice" class="card card-custom position-relative">
                         <img src="img/applepay.png" class="card-image" alt="card-image-applepay">
                     </button>
                 </div>
@@ -76,6 +76,22 @@
         <img src="img/characterM.png" alt="astronauta image" class="character2">
 
     </div> 
-
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+            window.location.href = "15_pagamento.html";
+        });
+        document.getElementById("visaChoice").addEventListener("click", function() {
+            window.location.href = "29_feedback-pagamento.html";
+        });
+        document.getElementById("ticketChoice").addEventListener("click", function() {
+            window.location.href = "29_feedback-pagamento.html";
+        });
+        document.getElementById("satispayChoice").addEventListener("click", function() {
+            window.location.href = "29_feedback-pagamento.html";
+        });
+        document.getElementById("appleChoice").addEventListener("click", function() {
+            window.location.href = "29_feedback-pagamento.html";
+        });
+    </script>
 </body>
 </html>
