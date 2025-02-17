@@ -167,7 +167,7 @@
   }
   
   
-  .img-card-prezzo{
+  .img-card-price{
     position: absolute; /* Posizionamento assoluto all'interno della card */
     top: 50%;  /* Posiziona l'immagine a metà della card */
     transform: translateY(-30%) translateX(70%); /* Sposta l'immagine più in basso e meno a sinistra */
