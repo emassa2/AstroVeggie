@@ -211,6 +211,8 @@ img.img-step1{
 .step1-gen{
     height: 31vh;
     justify-content: space-between;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 .step1-cat{
