@@ -241,11 +241,11 @@ h4{
 }
 
 
-.img-panino{
+.img-bun{
     width: 1500px;
 }
 
-.panino {
+.bun {
     border: 25px solid var(--secondary-color);
     background-color: var(--white-color);
     height: 80%;
